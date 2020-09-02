@@ -1,0 +1,876 @@
+
+  :root {
+    --color-primary: #c468ff;
+    --linear-gradient: linear-gradient(102deg, #c468ff, #6e91f6);
+    --linear-gradient-button: linear-gradient(
+      0.25turn,
+      rgb(219, 157, 199),
+      rgb(140, 125, 197),
+      rgb(107, 147, 199)
+    ); }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+  border: transparent 0px }
+  
+
+/*initial pages: Login and register*/
+
+
+start {
+  width: 100vw;
+  height: 100vh;
+  display: flex; }
+
+h1 {
+  color: white;
+  font-weight: normal;
+  font-size: rem(30px); }
+
+p {
+  color: white;
+  font-weight: lighter;
+  font-size: rem(16px);
+  opacity: 70%; }
+
+.left-side {
+  width: 41%;
+  background-image: url(./assets/background_image.png), linear-gradient(#3243d8 50%, purple 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.right-side {
+  width: 59%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.upper-login-section {
+  height: 310px;
+  margin-top: 180px;
+  opacity: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.logo {
+  height: 130px;
+  opacity: 97%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.motion-word {
+  height: 42px;
+  opacity: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-size: rem(16px);
+  font-weight: 600; }
+
+.app-buttons {
+  width: 135px;
+  height: 45px;
+  background-color: transparent;
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100px;
+  border: solid 2px rgba(255, 255, 255, 0.2); }
+
+.buttonApple {
+  background-image: url(./assets/apple.svg); }
+
+.buttonGoogle {
+  background-image: url(./assets/google.svg); }
+
+.bottom-login-section {
+  width: 185px;
+  height: 85px;
+  margin: 7px;
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  border: transparent; }
+
+.twitter {
+  background-image: url(./assets/twitter.png); }
+
+.facebook {
+  background-image: url(./assets/facebook.png); }
+
+.instagram {
+  background-image: url(./assets/instagram.png); }
+
+.down-left {
+  height: 180px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.rights {
+  width: 240px;
+  margin-top: 20px;
+  opacity: 70%;
+  font-size: 12px;
+  font-weight: normal;
+  color: white;
+  display: flex;
+  justify-content: center; }
+
+.sign-in-text {
+  height: 36.5px;
+  margin-top: 118px;
+  margin-bottom: 45px;
+  font-size: 36.5px;
+  color: black; }
+
+.upper-right {
+  height: 40px;
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center; }
+
+.bottom-right {
+  width: 100%;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; }
+
+.inputs-sign-in {
+  height: 140px;
+  width: 280px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly; }
+
+.sign-up-button {
+  width: 120px;
+  margin-right: 65px;
+  margin-left: 10px;
+  background-color: transparent;
+  border: solid 1px lightgray;
+  border-radius: 100px; }
+
+#no-account {
+  width: 680px;
+  margin-right: 14px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.inputs {
+  height: 60px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: solid 1px lightgray; }
+
+.username {
+  background-image: url(./assets/user.svg);
+  background-repeat: no-repeat;
+  background-position: left; }
+
+.password {
+  background-image: url(./assets/pass.svg);
+  background-repeat: no-repeat;
+  background-position: left; }
+
+
+.sing-in-button {
+  width: 260px;
+  height: 60px;
+  opacity: 70%;
+  background-image: linear-gradient(0.25turn, #da1397, #6952bd, #2b6ec5);
+  background-size: cover;
+  color: white;
+  border-radius: 100px;
+  border: solid 2px rgba(255, 255, 255, 0.2); }
+
+
+  .save-button {
+    width: 180px;
+    height: 40px;
+    opacity: 70%;
+    background-image: linear-gradient(0.25turn, #da1397, #6952bd, #2b6ec5);
+    background-size: cover;
+    color: white;
+    border-radius: 100px;
+    border: solid 2px rgba(255, 255, 255, 0.2); }
+  
+    #dele {
+    border-radius: 100px;
+    background-image: none;
+    background-color: white;
+    color: black;
+    border: solid 1px lightgray
+    }
+
+
+  #follow-addfriend-buttons button, #edit-profile {
+    width: 150px;
+    height: 40px;
+    opacity: 70%;
+    background-color: white;
+    background-size: cover;
+    color: black;
+    border-radius: 100px;
+    border: solid 2px lightgrey
+  }
+
+  #follow-addfriend-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 320px; }
+
+  /* Header + feed */
+  #newposts {
+    background-color: white;
+    display:flex;
+    width: 700px;
+    height: 120px;
+    margin-bottom: -30px;
+    justify-content: flex-start;
+    align-content: center;
+
+  }
+
+  #feed {
+    background-color: rgb(245, 245, 245);
+    padding-left: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 40px;
+    gap: 20px;
+    padding-right: 200px;
+  
+  }
+  .container-top-1 {
+    box-shadow: 0 4px 0 0 rgba(180, 173, 173, 0.19);
+    height: 81px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  
+
+    .container-top-1-left {
+      width: 630px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+  
+  .container-top-1-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  
+  .search-feed {
+    height: 80px;
+    width: 400px;
+    display: flex;
+    margin-left: 40px;
+    justify-content: space-between;
+    align-items: center; }
+  
+  .search-feed-right{
+   height: 80px;
+width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  
+    #container-motion {
+      width: 168px;
+      display: flex;
+    justify-content: space-around;
+    }
+    #container-motion h3 {
+      color:black
+    }
+  
+  .container-posts-and-friends {
+    width: 321px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+   color: black;
+  }
+  
+  .container-user-and-menu {
+    display: flex;
+    justify-content: space-around; }
+  
+#container-posts, #container-friends {
+  color:black;
+
+
+}
+  h1 {
+    font-size: 25px;
+    margin-left: 12px;
+    font-weight: 400; }
+  
+  h2 {
+    font-size: 19px;
+    margin-left: 18px;
+    font-weight: 400; }
+  
+  h3,
+  #friends,
+  #follow,
+  #liked {
+    font-size: 20px;
+    font-weight: 400;
+    color: grey; 
+  background-color: white;}
+ 
+   
+  
+  .container-user-and-menu {
+    width: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 16px; }
+  
+  #modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+  .input-new-post {
+    height: 60px;
+    width: 430px;
+    border-bottom: transparent;
+
+  }
+
+  .posts-feed {
+    background-color: white;
+    height: fit-content;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .posts-feed-modal {
+    height: 400px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  #button-new-post {
+    outline: none;
+    width: 700px;
+    margin-left: 30px;
+    background-color: white;
+    border: transparent;
+    background-image: none;
+    box-shadow: 0 3px 10px 0 rgba(180, 173, 173, 0.19);
+  }
+
+  .send {
+    height: 40px;
+    width: 40px;
+    background-image: var(--linear-gradient-button);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: transparent;
+    border-radius: 100%;
+      }
+
+#send-popup-button {
+  border: transparent;
+
+  border-radius: 100%;
+
+}
+
+/*Login*/
+
+
+  #form-login {
+    height: 540px;
+    width: 280px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+  }
+
+  form button {
+    width: 260px;
+    height: 60px;
+    opacity: 70%;
+    font-size: 14px;
+    background-image: linear-gradient(0.25turn, #da1397, #6952bd, #2b6ec5);
+    background-size: cover;
+    color: white;
+    border-radius: 100px;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+  }
+
+
+  #username {
+    margin-top: 10px;
+    background-image: url(./assets/user.svg);
+    background-repeat: no-repeat;
+    background-position: left; }
+  
+  #password {
+    margin-top: 10px;
+    background-image: url(./assets/pass.svg);
+    background-repeat: no-repeat;
+    background-position: left; }
+
+  input {
+    outline: none;
+    height: 60px;
+    margin-top: 30px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: solid 1px lightgray; }
+  
+  #sign-in-button {
+    margin-top: 250px;
+  }
+
+  #sign-up-button {
+    height: 40px;
+    width: 120px;
+    margin-right: 65px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: solid 1px rgb(153, 148, 148);
+    border-radius: 100px;
+  font-size: 12px }
+
+
+  /*Register*/
+
+  #register-form{
+    height: 100px;
+    width: 380px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+
+  #continue-button {
+    bottom: 240px;
+    right: 420px;
+    position: fixed;
+    width: 260px;
+    height: 60px;
+    opacity: 70%;
+    background-image: linear-gradient(0.25turn, #da1397, #6952bd, #2b6ec5);
+    background-size: cover;
+    color: white;
+    border-radius: 100px;
+    border: solid 2px rgba(255, 255, 255, 0.2);
+  }
+
+  #form-validation {
+    height: 500px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #validation {
+    height: 400px;
+    width: 800px;
+    display: grid;
+    grid-template-areas: "a a";
+    gap: 50px;
+  }
+
+  #validation input {
+    margin-top: -8px;
+  }
+ 
+  #motion-log{
+    height: 130px;
+    opacity: 95%;
+  }
+
+  #find-friends {
+    display: grid;
+    grid-template-columns: 33% 34% 33% ;
+    width: 100%;
+    column-gap: -30px;
+    padding-left: 80px;
+    padding-right: 100px;
+    background-color: rgb(245, 245, 245);
+ 
+  }
+  .out {
+    padding: 30px;
+    background-color: white;
+    height: 500px;
+    width: 400px;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 10px 0 rgba(180, 173, 173, 0.075);
+    text-align: center;
+  }
+  
+  #motion-word {
+    height: 42px;
+    opacity: 70%;
+  margin-left: 0;
+    font-size: rem(16px);
+    font-weight: 400; 
+  color: white}
+
+.logo{
+  height: 150px;
+}
+
+.motion-text p {
+  height: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-buttons {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+::placeholder {
+  color: black;
+  opacity: 80%;
+  font-size: 14px; }
+
+  .inputs {
+    text-align: center;
+  }
+
+  #congratulations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    padding-top: 200px;
+    color: black
+  }
+
+  #sent-email {
+    margin-top: 50px;
+    font-size: 16px;
+
+  }
+
+  /*Header*/
+  
+#dropdown-notifications, #dropdown-button-profile {
+ background-color: white;
+ border: transparent;
+ background-position: center;
+ background-repeat: no-repeat;
+ box-shadow: none;
+
+  right: 10px;
+  top: 10px;
+  }
+
+
+#dropdown-button-profile {
+  background-image: url('./assets/menu.svg');
+  background-size: 4px;
+ 
+}
+
+#dropdown-notifications {
+  background-image: url('./assets/notification_bell.svg');
+  background-size: 20px;
+
+}
+
+
+
+#logo-header {
+  width: 36px;
+  height: 36px;
+  margin-left: 36px;
+  margin-right: 8px;
+}
+
+#feed-body {
+  margin-left: 180px;
+  margin-right: 180px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+#post-content-button {
+  background-color: transparent;
+  color: black;
+  border: transparent;
+ box-shadow: none;
+
+}
+
+.footer {
+  width: 600px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  margin-bottom: -20px;
+}
+
+
+.name-date {
+  width:  170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#post-name-date {
+  display: flex;
+  flex-direction: column
+}
+
+
+
+.likes-shares {
+  height: 60px;
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.like-button {
+  width: 18px;
+  height: 18px;
+  background-image: url(./assets/heart.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.share-button {
+  width: 100px;
+  height: 18px;
+  background-image: url(./assets/share.svg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#profile-tab, #logout-tab  {
+  width: 150px;
+  height: 40px;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+#profile-tab:hover, #logout-tab:hover {
+  background-color: lightgray;
+
+}
+
+
+.post-date, #locatio-profile {
+  font-size: 14px;
+}
+
+
+#profile-and-logout {
+  background-color: transparent;
+  border: transparent;
+  color: black;
+  cursor: pointer;
+}
+
+.avatar {
+  border: solid 1px black;
+  border-radius: 100%;
+  height: 70px;
+  width: 70px;
+}
+
+.avatar-feed {
+  height: 40px;
+  width: 40px;
+}
+
+#things-like {
+  display: flex;
+  justify-items: space-around;
+}
+
+.profile-container, #profile-edit {
+  width: 100vw;
+height: 100vh;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  width: 75%;
+  height: 350px;
+  border: solid 1px lightgray;
+  color: black;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0 3px 10px 0 rgba(180, 173, 173, 0.19);
+}
+
+#profile-edi {
+  height: 380px;
+
+}
+
+.bla {
+display: flex;
+justify-content: space-around;
+}
+
+.right-profile {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px
+
+}
+
+.button-profile {
+  height: 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ border: transparent;
+  
+}
+
+.top-rigth-profile{
+  height: 250px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.info-profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.left-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+align-items: center;
+padding-top: 10px
+
+}
+
+.name-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.things-i-like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#add-but {
+  width: 70px;
+  height: 30px;
+  background-image: none;
+  background-color: white;
+  color: black;
+  border: solid 1px lightgray;
+  margin-right: 60px;
+}
+
+
+#check {
+  width: 100px;
+  height: 100px;
+  margin-top: 40px
+}
+
+#delete-account, #close-delete {
+  width: 180px;
+  height: 40px;
+  background-image: none;
+  background-color: white;
+  color: black;
+  border: solid 1px lightgray;
+  margin-right: 60px;
+  border-radius: 100px;
+}
+
+
+#requests:hover {
+  background-color: lightgray;
+}
